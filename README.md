@@ -105,4 +105,42 @@ A API utiliza os seguintes modelos:
   ]
 }
 ```
+# Configuração do Ambiente Local
+
+Siga as instruções abaixo para configurar e executar a PetKare API em seu ambiente local:
+
+1. Clone este repositório em sua máquina local.
+
+2. Ative o ambiente virtual utilizando o seguinte comando:
+
+   - **Windows:**
+
+     ```
+     .\venv\Scripts\activate
+     ```
+
+   - **Linux:**
+
+     ```
+     source venv/bin/activate
+     ```
+
+3. Instale as dependências utilizando o seguinte comando:
+
+     ```
+     pip install -r requirements.txt
+     ```
+
+
+4. Execute o seguinte comando para iniciar a API:
+
+
+     ```
+     python manage.py run
+     ```
+
+
+Certifique-se de ter o Python e o PIP instalado em seu computador antes de executar os comandos acima. Lembre-se também de estar no diretório correto do projeto ao executar os comandos.
+
+
 
