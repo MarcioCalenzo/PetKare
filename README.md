@@ -62,3 +62,47 @@ A API utiliza os seguintes modelos:
   "group": {"scientific_name": "canis familiaris"},
   "traits": [{"trait_name": "clever"}, {"trait_name": "friendly"}]
 }
+```
+### A resposta terá o seguinte formato:
+
+
+```json
+{
+  "id": 1,
+  "name": "Seraphim",
+  "age": 1,
+  "weight": 20.0,
+  "sex": "Male",
+  "group": {
+    "id": 1,
+    "scientific_name": "canis familiaris",
+    "created_at": "2022-11-27T17:55:22.819371Z"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "trait_name": "clever",
+      "created_at": "2022-11-27T17:55:30.819371Z"
+    },
+    {
+      "id": 2,
+      "trait_name": "friendly",
+      "created_at": "2022-11-27T17:55:31.819371Z"
+    }
+  ]
+}
+```
+###Para listar os pets, faça uma requisição GET para api/pets/. A resposta terá o seguinte formato:
+
+
+```json
+{
+  "count": 8,
+  "next": "http://localhost:8000/api/pets/?page=2",
+  "previous": null,
+  "results": [
+    // Deve haver apenas 2 pets listados por vez
+  ]
+}
+```
+
